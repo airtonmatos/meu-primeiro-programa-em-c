@@ -1,4 +1,4 @@
-# Meu Primeiro Programa em C  
+# 💻 Meu Primeiro Programa em C  
 Repositório: *“meu-primeiro-programa-em-c”*  
 Autor: Airton Matos  
 [LinkedIn](https://www.linkedin.com/in/airton-matos-889088384/)
@@ -6,7 +6,7 @@ Autor: Airton Matos
 ---
 
 ## 1. Visão Geral  
-Este projeto contém um programa escrito em linguagem C, cujo objetivo é servir como primeiro exercício prático de programação, demonstrando conceitos básicos tais como:  
+Este projeto contém um programa escrito em linguagem **C**, cujo objetivo é servir como primeiro exercício prático de programação, demonstrando conceitos básicos tais como:  
 - Estrutura de um programa em C (função `main`, bibliotecas, etc)  
 - Entrada e saída de dados  
 - Controle de fluxo simples  
@@ -33,7 +33,7 @@ O programa implementa:
 
 ## 4. Tecnologias Utilizadas  
 - Linguagem de programação: **C**  
-- Compilador sugerido: `gcc` ou qualquer equivalente compatível com padrão C99 ou superior  
+- Compilador sugerido: `gcc` ou qualquer equivalente compatível com padrão **C99** ou superior  
 - Ambiente de desenvolvimento: terminal/console ou IDE à sua escolha  
 
 ---
