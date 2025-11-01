@@ -37,11 +37,3 @@ O programa implementa:
 - Ambiente de desenvolvimento: terminal/console ou IDE à sua escolha  
 
 ---
-
-## 5. Como Executar  
-> **Passos para compilar e executar o programa:**
-
-1. Abra o terminal na pasta do projeto.  
-2. Compile o arquivo Fonte:  
-   ```bash
-   gcc -o meu_programa "Super Trunfo.c"
