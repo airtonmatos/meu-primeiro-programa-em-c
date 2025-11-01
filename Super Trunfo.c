@@ -2,7 +2,7 @@
 #include <string.h>
 
 struct carta {
-    char Estado;
+    char Estado[50];
     char Codigo[5];
     char Cidade[50];
     unsigned long int Populacao;
@@ -16,8 +16,9 @@ int main() {
 
     printf("Carta 1:\n");
 
-    printf("Estado (A-H): ");
-    scanf(" %c", &carta1.Estado);
+    printf("Estado (nome completo): ");
+    fgets(carta1.Estado, sizeof(carta1.Estado), stdin);
+    carta1.Estado[strcspn(carta1.Estado, "\n")] = 0;
 
     printf("Codigo da carta(A01): ");
     scanf("%s", carta1.Codigo);
@@ -42,10 +43,12 @@ int main() {
     scanf("%d", &carta1.Pontos_turisticos);
 
     printf("\nCarta 2:\n");
-
-    printf("Estado (A-H): ");
-    scanf(" %c", &carta2.Estado);
-
+    
+    getchar(); // limpar o \n do buffer
+    printf("Estado (nome completo): ");
+    fgets(carta2.Estado, sizeof(carta2.Estado), stdin);
+    carta2.Estado[strcspn(carta2.Estado, "\n")] = 0;
+    
     printf("Codigo da carta(A01): ");
     scanf("%s", carta2.Codigo);
     getchar(); // limpa o \n do buffer
@@ -81,7 +84,7 @@ int main() {
     // Exibição
     printf("\n=============================\n");
     printf("Carta 1:\n");
-    printf("Estado: %c\n", carta1.Estado);
+    printf("Estado: %s\n", carta1.Estado);
     printf("Código: %s\n", carta1.Codigo);
     printf("Nome da Cidade: %s\n", carta1.Cidade);
     printf("População: %.2f milhões\n", carta1.Populacao / 1000000.0);
@@ -96,7 +99,7 @@ int main() {
 
     printf("\n=============================\n");
     printf("Carta 2:\n");
-    printf("Estado: %c\n", carta2.Estado);
+    printf("Estado: %s\n", carta2.Estado);
     printf("Código: %s\n", carta2.Codigo);
     printf("Nome da Cidade: %s\n", carta2.Cidade);
     printf("População: %.2f milhões\n", carta2.Populacao / 1000000.0);
